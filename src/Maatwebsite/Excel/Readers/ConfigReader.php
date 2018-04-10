@@ -112,7 +112,7 @@ class ConfigReader {
      * @param  string $field
      * @return string|null
      */
-    protected function valueByIndex($field)
+    public function valueByIndex($field)
     {
         // Convert field name
         $field = snake_case($field);
@@ -160,7 +160,7 @@ class ConfigReader {
      */
     protected function getCoordinateByKey($field)
     {
-        return config($this->configName . '.' . $this->sheetName . '.' . $field, false);
+        return config($this->configName . '.' . $field, false);
     }
 
     /**
