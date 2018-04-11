@@ -115,7 +115,7 @@ class ConfigReader {
     public function valueByIndex($field)
     {
         // Convert field name
-        $field = snake_case($field);
+        //$field = snake_case($field);
 
         // Get coordinate
         if ($coordinate = $this->getCoordinateByKey($field))
